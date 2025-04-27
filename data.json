@@ -1,0 +1,156 @@
+{
+	"question": "テキストファイル(テキストエディタで直接読める)ですか?",
+	"yes": {
+		"question": "プログラム/データ記述(マークアップ以外)言語ですか?",
+		"yes": {
+			"question": "動的型付けですか?",
+			"yes": {
+				"question": "日本人が作りましたか?",
+				"yes": {
+					"answer": "rb"
+				},
+				"no": {
+					"question": "ウェブ技術と関連していますか?",
+					"yes": {
+						"question": "ブラウザで動きますか?",
+						"yes": {
+							"answer": "js"
+						},
+						"no": {
+							"answer": "php"
+						}
+					},
+					"no": {
+						"question": "機械学習で人気ですか?",
+						"yes": {
+							"answer": "py"
+						}
+					}
+				}
+			},
+			"no": {
+				"question": "2010年以降ですか?",
+				"yes": {
+					"question": "メモリ所有権がありますか?",
+					"yes": {
+						"answer": "rs"
+					},
+					"no": {
+						"answer": "ts"
+					}
+				},
+				"no": {
+					"question": "軽量スレッドがありますか?",
+					"yes": {
+						"answer": "go"
+					}
+				}
+			}
+		},
+		"no": {
+			"question": "HTMLと関連していますか?",
+			"yes": {
+				"question": "簡易的ですか?",
+				"yes": {
+					"answer": "md"
+				},
+				"no": {
+					"answer": "html"
+				}
+			},
+			"no": {
+				"answer": "txt"
+			}
+		}
+	},
+	"no": {
+		"question": "動画・音声に関連していますか?",
+		"yes": {
+			"question": "動画ですか?",
+			"yes": {
+				"question": "Googleと関連していますか?",
+				"yes": {
+					"answer": "webm"
+				},
+				"no": {
+					"question": "オープンソースとの関連が強いですか?",
+					"yes": {
+						"answer": "ogg"
+					},
+					"no": {
+						"answer": "mp4"
+					}
+				}
+			},
+			"no": {
+				"question": "音質が重要ですか?",
+				"yes": {
+					"question": "容量が一番大きいですか?",
+					"yes": {
+						"answer": "wav"
+					},
+					"no": {
+						"answer": "flac"
+					}
+				},
+				"no": {
+					"question": "圧縮率が高いですか?",
+					"yes": {
+						"answer": "opus"
+					},
+					"no": {
+						"question": "特許が取得されていましたか?",
+						"yes": {
+							"answer": "mp3"
+						},
+						"no": {
+							"answer": "vorbis"
+						}
+					}
+				}
+			}
+		},
+		"no": {
+			"question": "圧縮ファイルですか?",
+			"yes": {
+				"question": "Linuxとの関連が深いですか?",
+				"yes": {
+					"question": "2015年に開発され、高い圧縮率と速度を誇りますか?",
+					"yes": {
+						"answer": "tar.zst"
+					},
+					"no": {
+						"question": "1992年からありますか?",
+						"yes": {
+							"answer": "gzip"
+						},
+						"no": {
+							"question": "2000年以降ですか?",
+							"yes": {
+								"answer": "tar.xz"
+							},
+							"no": {
+								"answer": "tar.bz2"
+							}
+						}
+					}
+				},
+				"no": {
+					"question": "Windowsに圧縮機能が標準搭載されていますか?",
+					"yes": {
+						"answer": "zip"
+					},
+					"no": {
+						"question": "オープンフォーマットですか?",
+						"yes": {
+							"answer": "7z"
+						},
+						"no": {
+							"answer": "rar"
+						}
+					}
+				}
+			}
+		}
+	}
+}
