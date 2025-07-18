@@ -1,37 +1,36 @@
 <!doctype html>
 <html>
-	<head>
-		<title>拡張子アキネーター</title>
-	</head>
-	<body>
-		<h1 id="question"></h1>
-		<button type="button" id="yes">はい</button
-		><button type="button" id="no">いいえ</button>
-		<script>
-			async function main() {
-				const data = await (await fetch("data.json")).json();
-				let question = data;
-				const questionEl = document.getElementById("question");
-				function updateQuestion() {
-					if (question.answer) {
-						questionEl.textContent = "答え: " + question.answer;
-						no.outerHTML = "";
-						yes.outerHTML = "";
-						return;
-					}
-					questionEl.textContent = question.question;
-				}
-				updateQuestion();
-				yes.addEventListener("click", () => {
-					question = question.yes;
-					updateQuestion();
-				});
-				no.addEventListener("click", () => {
-					question = question.no;
-					updateQuestion();
-				});
-			}
-			main();
-		</script>
-	</body>
+  <head>
+    <title>拡張子アキネーター</title>
+  </head>
+  <body>
+    <h1 id="question"></h1>
+    <button type="button" id="yes">はい</button><button type="button" id="no">いいえ</button>
+    <script>
+      async function main() {
+        const data = await (await fetch("data.json")).json();
+        let question = data;
+        const questionEl = document.getElementById("question");
+        function updateQuestion() {
+          if (question.answer) {
+            questionEl.textContent = "答え: " + question.answer;
+            no.outerHTML = "";
+            yes.outerHTML = "";
+            return;
+          }
+          questionEl.textContent = question.question;
+        }
+        updateQuestion();
+        yes.addEventListener("click", () => {
+          question = question.yes;
+          updateQuestion();
+        });
+        no.addEventListener("click", () => {
+          question = question.no;
+          updateQuestion();
+        });
+      }
+      main();
+    </script>
+  </body>
 </html>
